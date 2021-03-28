@@ -1,0 +1,27 @@
+img{
+    width: 40px;
+}
+.game{
+    .pacman{
+        position: relative;
+        animation: move 3s infinite;
+        animation-timing-function: linear;
+        rotate: 45deg;
+        animation-delay: 0.2s;
+    }
+    .ghost{
+        position: relative;
+        animation: move 3s infinite;
+        animation-timing-function: linear;
+        rotate: 45deg;
+        padding-left: 40px;
+    }
+}
+
+@keyframes move {
+    0%   {transform: rotate(45deg); left:0px; top:100px;}
+  20%  {transform: rotate(-45deg);left:300px; top:10px;}
+  50%  { transform: rotate(45deg);left:600px; top:100px;}
+  75%  {transform: rotate(-45deg);left:900px; top:10px;}
+  100% {transform: rotate(45deg);left:1100px; top:100px;}
+  }
